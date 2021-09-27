@@ -1,4 +1,5 @@
 # CycleGAN-PyTorch
+<a href="https://replicate.ai/lornatang/cyclegan-pytorch"><img src="https://img.shields.io/static/v1?label=Replicate&message=Demo and Docker Image&color=darkgreen" height=20></a>
 
 ### Overview
 This repository contains an op-for-op PyTorch reimplementation of [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593).
@@ -14,7 +15,7 @@ This repository contains an op-for-op PyTorch reimplementation of [Unpaired Imag
 4. [Train](#train)
     * [Example](#example)
     * [Resume training](#resume-training)
-5. [Contributing](#contributing) 
+5. [Contributing](#contributing)
 6. [Credit](#credit)
 
 ### About Cycle Generative Adversarial Networks
@@ -141,7 +142,7 @@ $ python3 train.py --dataset horse2zebra \
 
 If you find a bug, create a GitHub issue, or even better, submit a pull request. Similarly, if you have questions, simply post them as GitHub issues.   
 
-I look forward to seeing what the community does with these models! 
+I look forward to seeing what the community does with these models!
 
 ### Credit
 
@@ -149,17 +150,17 @@ I look forward to seeing what the community does with these models!
 _Jun-Yan Zhu, Taesung Park, Phillip Isola, Alexei A. Efros_ <br>
 
 **Abstract** <br>
-Image-to-image translation is a class of vision and graphics problems where the goal 
-is to learn the mapping between an input image and an output image using a training 
-set of aligned image pairs. However, for many tasks, paired training data will not be 
-available. We present an approach for learning to translate an image from a source 
-domain X to a target domain Y in the absence of paired examples. Our goal is to learn 
+Image-to-image translation is a class of vision and graphics problems where the goal
+is to learn the mapping between an input image and an output image using a training
+set of aligned image pairs. However, for many tasks, paired training data will not be
+available. We present an approach for learning to translate an image from a source
+domain X to a target domain Y in the absence of paired examples. Our goal is to learn
 a mapping G:X→Y such that the distribution of images from G(X) is indistinguishable
 from the distribution Y using an adversarial loss. Because this mapping is highly
-under-constrained, we couple it with an inverse mapping F:Y→X and introduce a cycle 
-consistency loss to push F(G(X))≈X (and vice versa). Qualitative results are presented 
-on several tasks where paired training data does not exist, including collection 
-style transfer, object transfiguration, season transfer, photo enhancement, etc. 
+under-constrained, we couple it with an inverse mapping F:Y→X and introduce a cycle
+consistency loss to push F(G(X))≈X (and vice versa). Qualitative results are presented
+on several tasks where paired training data does not exist, including collection
+style transfer, object transfiguration, season transfer, photo enhancement, etc.
 Quantitative comparisons against several prior methods demonstrate the superiority
 of our approach.
 
